@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #23272f;
+    --secondary-color: #181a1d;
+    --accent-color: #3a4a5a;
+    --text-color: #e5e5e5;
+    --background-color: #5a6a7a;
+    --border-color: #2c2f36;
+    --hover-color: #353a42;
+    --button-bg: #23272f;
+    --button-hover-bg: #181a1d;
+    --div-background-color: #5a6a7a;
+}
+
+/* --- WRAPPER GLOBAL --- */
+.login-user-wrapper {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- TITRE --- */
+.login-user-title-wrapper {
+    margin-top: 40px;
+}
+
+.login-user-title {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+/* --- FORMULAIRE --- */
+.login-user-form-wrapper {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-user-form {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    padding: 30px 40px;
+    border-radius: 10px;
+
+    width: 90%;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* --- INPUTS --- */
+.login-user-form input {
+    background-color: var(--div-background-color);
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    border-radius: 6px;
+    color: var(--text-color);
+    font-size: 1rem;
+
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.login-user-form input:focus {
+    border-color: var(--accent-color);
+    background-color: var(--hover-color);
+    outline: none;
+}
+
+/* --- BOUTON SUBMIT --- */
+.login-user-form button[type="submit"] {
+    background-color: var(--button-bg);
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    border-radius: 6px;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.login-user-form button[type="submit"]:hover:not(:disabled) {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.03);
+}
+
+.login-user-form button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* --- MESSAGES --- */
+.login-error {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.login-success {
+    color: #6bff8f;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* --- SWITCH LOGIN / REGISTER --- */
+.login-user-switch {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.login-user-switch button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.login-user-switch button:hover {
+    color: var(--accent-color);
+}
+
+/* --- FOOTER --- */
+.footer-wrapper {
+    margin-top: auto;
+    width: 100%;
+}

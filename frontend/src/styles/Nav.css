@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #23272f;
+    --secondary-color: #181a1d;
+    --accent-color: #3a4a5a;
+    --text-color: #e5e5e5;
+    --background-color: #5a6a7a;
+    --border-color: #2c2f36;
+    --hover-color: #353a42;
+    --button-bg: #23272f;
+    --button-hover-bg: #181a1d;
+    --div-background-color: #5a6a7a;
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 24px;
+    color: var(--text-color);
+}
+
+/* --- TITRE --- */
+.navbar-title-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* --- LIENS --- */
+.navbar a {
+    margin: 0 12px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+/* --- UTILISATEUR CONNECTÉ --- */
+.navbar-user {
+    margin: 0 12px;
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+/* --- BOUTON DECONNEXION --- */
+.navbar-logout {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-left: 12px;
+
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.navbar-logout:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+/* --- LOGO --- */
+.logo-wrapper img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0.8);
+    transition: filter 0.2s ease;
+}
+
+.logo-wrapper img:hover {
+    filter: brightness(1);
+}

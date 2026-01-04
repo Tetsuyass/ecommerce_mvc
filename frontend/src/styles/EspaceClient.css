@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #23272f;
+    --secondary-color: #181a1d;
+    --accent-color: #3a4a5a;
+    --text-color: #e5e5e5;
+    --background-color: #5a6a7a;
+    --border-color: #2c2f36;
+    --hover-color: #353a42;
+    --button-bg: #23272f;
+    --button-hover-bg: #181a1d;
+    --div-background-color: #5a6a7a;
+}
+
+/* ============================
+   WRAPPER GLOBAL
+============================ */
+.user-space-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: var(--text-color);
+}
+
+/* ============================
+   TITRE PRINCIPAL
+============================ */
+.user-space-title-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user-space-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+/* ============================
+   TITRE SECONDAIRE
+============================ */
+.history-items-list-container-title-wrapper {
+    margin-bottom: 20px;
+}
+
+.history-items-list-container-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* ============================
+   TABLEAU HISTORIQUE
+============================ */
+.history-items-list {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.history-items-list thead {
+    background: var(--primary-color);
+}
+
+.history-items-list th,
+.history-items-list td {
+    padding: 15px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.history-items-list th {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.history-items-list tbody tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.history-items-list tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* ============================
+   LIGNES AU SURVOL
+============================ */
+.history-items-list tbody tr:hover {
+    background: var(--hover-color);
+    transition: 0.2s ease;
+}
+
+/* ============================
+   MESSAGE D'ERREUR
+============================ */
+.user-space-wrapper p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 750px) {
+    .history-items-list th,
+    .history-items-list td {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .user-space-title {
+        font-size: 1.8rem;
+    }
+
+    .history-items-list-container-title {
+        font-size: 1.3rem;
+    }
+}
